@@ -8,7 +8,7 @@ WORKDIR /app
 USER root
 
 RUN apt-get update && apt-get install -y curl wget && \
-    curl -L $(curl -s  https://api.github.com/repos/Harry-zklcdc/go-bingai-pass/releases/latest | grep /go-bingai-pass-linux-amd64.tar.gz | cut -d '"' -f 4) -o go-bingai-pass-linux-amd64.tar.gz && \
+    curl -L $(curl -s  https://api.github.com/repos/Niansuh/go-bingai-pass/releases/latest | grep /go-bingai-pass-linux-amd64.tar.gz | cut -d '"' -f 4) -o go-bingai-pass-linux-amd64.tar.gz && \
     tar -zxvf go-bingai-pass-linux-amd64.tar.gz && \
     chmod +x go-bingai-pass
 
